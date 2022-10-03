@@ -1,0 +1,71 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>410</x><y>270</y><w>160</w><h>190</h></coordinates><panel_attributes>TankBody
+-
+self.x
+self.y
+self.image
+self.width
+self.height
+self.turret
+-
+move(self)
+check_if_hit(self, shell)
+check_collision(self, wall)
+draw(self)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>270</y><w>160</w><h>190</h></coordinates><panel_attributes>TankTurret
+-
+self.x
+self.y
+self.direction
+self.image
+self.style
+self.shells = []
+-
+shoot(self)
+draw(self)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>270</y><w>170</w><h>190</h></coordinates><panel_attributes>Shell
+-
+self.radius
+self.x
+self.y
+self.speed_x
+self.speed_y
+-
+bounce(self)
+move(self)
+draw(self)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>520</y><w>160</w><h>180</h></coordinates><panel_attributes>GameSquare
+-
+self.row
+self.column
+self.type
+self.walls = []
+-
+draw(self)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>520</y><w>160</w><h>180</h></coordinates><panel_attributes>Wall
+-
+self.x
+self.y
+self.height
+self.width
+-
+draw(self)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>30</y><w>160</w><h>190</h></coordinates><panel_attributes>ScoreBoard
+-
+self.players
+self.score1
+self.score2
+self.score3
+self.score4
+self.image1
+self.image2
+self.image3
+self.image4
+-
+draw(self)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>270</y><w>160</w><h>190</h></coordinates><panel_attributes>Player
+-
+self.tank
+self.score
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>270</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>270</y><w>100</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>270</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>520</y><w>90</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>290</y><w>100</w><h>110</h></coordinates><panel_attributes>Game
+-
+self.score
+self.players = []
+self.board
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>340</y><w>100</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>30</y><w>100</w><h>310</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>270</y><w>100</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;70</additional_attributes></element></diagram>
